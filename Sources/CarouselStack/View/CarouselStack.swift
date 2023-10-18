@@ -92,7 +92,7 @@ public struct CarouselStack<Data: RandomAccessCollection, Content: View>: View {
             if disabled {
                 contentView
             } else {
-                contentView.gesture(dragGesture)
+                contentView.highPriorityGesture(dragGesture)
             }
         }
         .frame(maxWidth: .infinity)

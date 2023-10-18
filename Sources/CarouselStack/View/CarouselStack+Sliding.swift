@@ -26,7 +26,7 @@ extension CarouselStack {
     
     /// A method that performs to restore content views, which have already been in the middle of sliding in the process of sliding, to the original position.
     internal func performRestoring() {
-        let maxSwipeDistance = size.width * 0.25
+        let maxSwipeDistance = size.width * 0.1
         if xPosition > 0 {
             let newIndex: Data.Index?
             switch style {

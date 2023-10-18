@@ -5,7 +5,7 @@ extension CarouselStack {
     @available(iOS 15.0, macOS 12.0, watchOS 8.0, *)
     @available(tvOS, unavailable)
     internal var dragGesture: some Gesture {
-        DragGesture()
+        DragGesture(minimumDistance: 10)
             .updating($isActiveGesture, body: { _, state, _ in
                 state = true
             })
